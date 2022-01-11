@@ -18,13 +18,12 @@ class Game : public olc::PixelGameEngine {
     olc::vf2d size;
     olc::Pixel colour;
     Block(int givenX, int givenY, int givenWidth, int givenHeight,
-          olc::Pixel givenColour, olc::vf2d givenVelocity = olc::vf2d{0,0}) {
+          olc::Pixel givenColour) {
       position.x = givenX;
       position.y = givenY;
       size.x = givenWidth;
       size.y = givenHeight;
-      colour = givenColour;
-      velocity = givenVelocity;
+      colour = givenColour;      
     }
   };
 
