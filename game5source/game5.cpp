@@ -110,9 +110,7 @@ class Game : public olc::PixelGameEngine {
 
       if (gammaX > -birdRadius && gammaX < block.size.x + birdRadius) {
         if (gammaY > -birdRadius && gammaY < block.size.y + birdRadius) {
-          if (gammaX < 0) {
-            birdAlive = false;
-          }
+          birdAlive = false;
         }
       }
     }
